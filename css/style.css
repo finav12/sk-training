@@ -1,9 +1,47 @@
-p{
-    font-family: 'Montserrat', sans-serif;
-    color:green;
-    font-size: 1.5em;
-    line-height: 1.4em;
-    font-weight: medium;
-    letter-spacing: 0.05em;
-    text-align: justify;
+ul li{
+    display: inline-block;
+    
+}
+a:hover{
+    background-color: aqua;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: yellowgreen;
+}
+h1::after{
+    content: " - Hello";
+}
+
+p::first-letter{
+    text-transform: uppercase;
+    
+}
+/* p{
+    width: 200px;
+    height:200px;
+    border-color: blue transparent yellow blueviolet;
+    border-style: solid;
+    border-width: 10px;
+} */
+.box{
+    display: inline-block;
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    color:white;
+    background-color: violet;
+    justify-content: space-between;
+    
+}
+.box::first-letter{
+    text-transform: uppercase;
+}
+#one{
+    background-color: wheat;
+    position: static;
+    left: 20px;
+    bottom: 20px;
 }
