@@ -1,46 +1,56 @@
 
-body{    
-    width: 1000px;
+body{
+    height: 100%;
+}
+.conteiner{
+    position: relative;
+    background-color: rgb(201, 200, 200);
+    width: 1200px;
+    height: 1200px;
     margin-left: auto;
     margin-right: auto;
+    
+    
+    
 }
-header{
-    height: 100px;
-    background-color: rgb(183, 196, 167);
+.main{
+    left: 50%;
+    top: 50%;
+    margin-right: -50%;
+    transform:translate(-50%, -50%);
+    position: absolute;
+   
+   
+    border: 1px solid red;
+    border-radius: 2%;
+    width: 400px;
+    height: 220px;
+    z-index: 1;
+    
+      
 }
-nav{
-    height: 80px;
-    background-color: rgb(110, 201, 0);
+p{
+    padding-top: px;
+    font-size: 18px;
+    font-style: italic;
+    padding-left: 10px;
+    line-height: 1.1;
+    
 }
-main{
-    display: inline-block;
-    height: 1000px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+h1{ 
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
 }
-#sidebar{
-    float: left;
+h1::after{
+    padding-top: 20px;
+    content: "";
+    border-bottom: 2px solid black;
     width: 200px;
-    background-color: rgb(77, 77, 248);
-    height: 1000px;
-}
-#content{
-    float: left;
-    background-color: rgb(196, 196, 255);
-    height: 1000px;
-    width: 600px;
-    margin: 0;
-    padding: 0;
-}
-aside{
-    width: 200px;
-    background-color: rgb(77, 77, 248);
-    height: 1000px;
-    float: left;    
-}
-footer{
-    margin-top: -3px;
-    height: 80px;
-    background-color: rgb(183, 196, 167);
+    display: block;
+    margin: auto    ;
 }
