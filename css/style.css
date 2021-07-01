@@ -1,66 +1,46 @@
-p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    margin: 25px;
+
+body{    
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
-p::after{
-    content: " \201c";
-    color:red;
-    font-family: 'Lato', sans-serif;  
+header{
+    height: 100px;
+    background-color: rgb(183, 196, 167);
 }
-p::before{
-    content:"\201d";
-    color:red;
-    font-family: 'Lato', sans-serif;
+nav{
+    height: 80px;
+    background-color: rgb(110, 201, 0);
 }
-ul,h1{
-    margin: 50px;
-}
-h1{
-    font-size: 35px;
-    color: black;
-    font-weight: bold;
-}
-.fruits li{
-    font-size: 18px;
-    color: black;
-    font-weight: 400;
-    list-style:  square;
-}
-.fruits li:nth-child(1):hover{
-    color: green;
-}
-.fruits li:nth-child(2):hover{
-    color:yellow;
-}
-.fruits li:nth-child(3):hover{
-    color:slateblue;
-}
-.fruits li:nth-child(4):hover{
-    color:rgb(255, 153, 0);
-}
-.fruits li:nth-child(5):hover{
-    color:rgb(207, 0, 0);
-    font-style: italic;
-}
-.nubmers li{
-    margin: 0px 5px 5px 0;
+main{
     display: inline-block;
-    width:32%;
-    background-color: gray;
-    text-align: center;
-    font-size: 0px;
+    height: 1000px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-.nubmers  ul li:hover{
-    background-color: green;
+#sidebar{
+    float: left;
+    width: 200px;
+    background-color: rgb(77, 77, 248);
+    height: 1000px;
 }
-.nubmers h3{
-    color: red;
-    font-size: 100px;    
+#content{
+    float: left;
+    background-color: rgb(196, 196, 255);
+    height: 1000px;
+    width: 600px;
+    margin: 0;
+    padding: 0;
 }
-.nubmers li:before{
-    content: "";
-    display: inline-block;
-    vertical-align: middle;    
+aside{
+    width: 200px;
+    background-color: rgb(77, 77, 248);
+    height: 1000px;
+    float: left;    
+}
+footer{
+    margin-top: -3px;
+    height: 80px;
+    background-color: rgb(183, 196, 167);
 }
