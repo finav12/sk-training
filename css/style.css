@@ -1,0 +1,93 @@
+div {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  border: 2px solid grey;
+  box-shadow: 0 0 0 5px red, 0 0 0 15px green;
+  border-radius: 5px;
+}
+.text {
+  text-shadow: 5px 5px 5px rgb(47, 78, 0);
+  font-size: 48px;
+}
+.gradient {
+  background-image: linear-gradient(to right, red, yellow);
+  transform: rotate(45deg);
+  transform-origin: top center;
+}
+.box {
+  transform: translate(100px, 100px) rotate(45deg) scale(120%) skew(30deg);
+}
+.transform__gradient {
+  margin: 100px 100px;
+  background-color: red;
+  width: 400px;
+  height: 200px;
+  background-image: linear-gradient(to);
+  border: 3px solid #7c8ac1;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 30%);
+  background-image: linear-gradient(
+    to right top,
+    rgba(246, 240, 77, 88%),
+    rgba(21, 51, 288, 88%)
+  );
+  transform: rotate(-30deg);
+}
+
+.lorem {
+  transition: width 2s;
+}
+.lorem:hover {
+  width: 400px;
+}
+
+/* @keyframes clr {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+} */
+@keyframes clr2 {
+  0%{
+    background-color: red;
+  }
+  25%{
+      background-color: rgb(47, 78, 0);
+  }
+  50%{
+      background-color: salmon;
+  }
+  100%{
+      background-color: red;
+  }
+  }
+.animation {
+    animation-name: clr2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite ;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes rotate{
+    from{
+    transform:rotate(0deg);
+}
+to{
+    transform:rotate(360deg);
+}
+}
+.animation__box{
+    background-color: rgb(15, 31, 80);
+    animation-name: rotate;
+    animation-duration: 1s ;
+    animation-iteration-count: infinite;
+}
+img{
+    width: 400;
+    height: 200;
+    filter: grayscale(100%);
+}
