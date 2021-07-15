@@ -1,0 +1,66 @@
+
+@import "reset";
+
+
+$size-text:20px;
+$color-text:rgb(233, 50, 50);
+
+
+@mixin position-center ($top,$left) {
+    position: absolute;
+    top: $top;
+    transform: translate(-50%, -50%);
+    @if $left == 50% {
+        left: 100px;
+        background-color: gray;
+    }
+    @else if $left == 60%{
+        left: 250px;
+        color: burlywood;
+    }
+    @else{
+        left: 450px;
+        background-color: hotpink;
+    }
+    
+}
+.text{
+    background-color: aquamarine;
+    // font-size: $size-text;
+    color: $color-text;
+    font:{
+        family: sanf-serif ,Arial;
+        size: 10px;
+    }
+}
+nav{
+
+    position: fixed;
+    top: 100px;
+
+    ul{
+        background-color: gray;
+        color: $color-text;
+        &:hover{
+            background-color: yellow;
+        }
+
+    }
+}
+p{
+    color: $color-text;
+    &:hover{
+        color: black;
+    }
+}
+.box{
+    width: 300px;
+    height:300px;
+    @include position-center (70%, 60%);
+    &:hover{
+        background-color: gold;
+    }
+}
+.conteiner{
+    @include position-center(50%, 50% ) ;
+}

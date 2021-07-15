@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px; }
+
+.text {
+  background-color: aquamarine;
+  color: #e93232;
+  font-family: sanf-serif ,Arial;
+  font-size: 10px; }
+
+nav {
+  position: fixed;
+  top: 100px; }
+  nav ul {
+    background-color: gray;
+    color: #e93232; }
+    nav ul:hover {
+      background-color: yellow; }
+
+p {
+  color: #e93232; }
+  p:hover {
+    color: black; }
+
+.box {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  left: 250px;
+  color: burlywood; }
+  .box:hover {
+    background-color: gold; }
+
+.conteiner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 100px;
+  background-color: gray; }
